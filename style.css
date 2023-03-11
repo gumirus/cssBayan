@@ -1,8 +1,7 @@
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 70%;
-  background-color: #90a49c;
+  background-color: #425050;
 }
 .CSSbayan {
   margin: auto;
@@ -12,7 +11,7 @@ body {
   position: relative;
   margin-bottom: 1%;
   width: 100%;
-  color: #ffffff;
+  color: #fff;
   overflow: hidden;
 }
 .CSSbayan_bayan input {
@@ -23,7 +22,7 @@ body {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
-  background: #141414;
+  background: #1e1e1e;
   font-weight: bold;
   line-height: 3;
   cursor: pointer;
@@ -31,8 +30,8 @@ body {
 .CSSbayan_bayan-content {
   max-height: 0;
   overflow: hidden;
-  background: #f5f6cf;
-  transition: max-height 1.25s;
+  background: #bfbe92;
+  transition: max-height 1.3s;
 }
 .CSSbayan_bayan input:checked ~ .CSSbayan_bayan-content {
   max-height: 100vh;
@@ -42,17 +41,16 @@ body {
   right: 0;
   top: 0;
   display: block;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
+  width: 2.25em;
+  height: 2.25em;
+  line-height: 2.25em;
   text-align: center;
-  transition: all 1.25s;
+  transition: all 1.3s;
 }
 .CSSbayan_bayan input[type="checkbox"] + label::after {
   content: "+";
-  font-size: 250%; /* увеличиваем размер символа на 50% */
+  font-size: 250%;
 }
-
 .CSSbayan_bayan input[type="checkbox"]:checked + label::after {
   transform: rotate(500deg);
 }

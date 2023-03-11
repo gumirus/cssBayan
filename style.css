@@ -70,22 +70,6 @@ body {
   align-items: center;
   height: 500px;
 }
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-/* стили для планшетной версии */
-@media (max-width: 768px) {
-  .container {
-    height: 400px;
-  }
-}
-/* стили для мобильной версии */
-@media (max-width: 480px) {
-  .container {
-    height: 300px;
-  }
-}
 /* адаптация по высоте */
 .CSSbayan_bayan-content img {
   max-width: 100%;

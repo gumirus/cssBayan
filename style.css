@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 2;
-  background-color: #425050;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 70%;
+  background-color: #90a49c;
 }
 .CSSbayan {
   margin: auto;
@@ -10,9 +10,9 @@ body {
 }
 .CSSbayan_bayan {
   position: relative;
-  margin-bottom: 1px;
+  margin-bottom: 1%;
   width: 100%;
-  color: #fff;
+  color: #ffffff;
   overflow: hidden;
 }
 .CSSbayan_bayan input {
@@ -23,7 +23,7 @@ body {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
-  background: #0c0d0d;
+  background: #141414;
   font-weight: bold;
   line-height: 3;
   cursor: pointer;
@@ -31,10 +31,8 @@ body {
 .CSSbayan_bayan-content {
   max-height: 0;
   overflow: hidden;
-  background: #92a7bf;
-  -webkit-transition: max-height 0.35s;
-  -o-transition: max-height 0.35s;
-  transition: max-height 0.35s;
+  background: #f5f6cf;
+  transition: max-height 1.25s;
 }
 .CSSbayan_bayan input:checked ~ .CSSbayan_bayan-content {
   max-height: 100vh;
@@ -44,25 +42,19 @@ body {
   right: 0;
   top: 0;
   display: block;
-  width: 3em;
-  height: 3em;
-  line-height: 3;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
   text-align: center;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 1.25s;
 }
 .CSSbayan_bayan input[type="checkbox"] + label::after {
   content: "+";
+  font-size: 250%; /* увеличиваем размер символа на 50% */
 }
-.CSSbayan_bayan input[type="radio"] + label::after {
-  content: "-";
-}
+
 .CSSbayan_bayan input[type="checkbox"]:checked + label::after {
   transform: rotate(500deg);
-}
-.CSSbayan_bayan input[type="radio"]:checked + label::after {
-  transform: rotateX(200deg);
 }
 .container {
   display: flex;
@@ -75,4 +67,7 @@ body {
   max-width: 100%;
   max-height: 100vh;
   height: auto;
+}
+.center {
+  text-align: center;
 }

@@ -5,10 +5,7 @@ body {
   background-color: #425050;
 }
 .CSSbayan {
-  max-width: 850px;
   margin: auto;
-  display: block;
-  text-align: center;
   padding-bottom: 100%;
 }
 .CSSbayan_bayan {
@@ -39,13 +36,9 @@ body {
   -o-transition: max-height 0.35s;
   transition: max-height 0.35s;
 }
-
-/* :checked */
 .CSSbayan_bayan input:checked ~ .CSSbayan_bayan-content {
   max-height: 100vh;
 }
-
-/* иконки */
 .CSSbayan_bayan label::after {
   position: absolute;
   right: 0;
@@ -92,4 +85,10 @@ img {
   .container {
     height: 300px;
   }
+}
+/* адаптация по высоте */
+.CSSbayan_bayan-content img {
+  max-width: 100%;
+  max-height: 100vh;
+  height: auto;
 }

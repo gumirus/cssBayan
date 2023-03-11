@@ -5,8 +5,10 @@ body {
   background-color: #425050;
 }
 .CSSbayan {
-  max-width: 570px;
+  max-width: 850px;
   margin: auto;
+  display: block;
+  text-align: center;
   padding-bottom: 100%;
 }
 .CSSbayan_bayan {
@@ -69,7 +71,7 @@ body {
 .CSSbayan_bayan input[type="radio"]:checked + label::after {
   transform: rotateX(200deg);
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 570px) {
   .CSSbayan {
     max-width: 100%;
     width: 100%;

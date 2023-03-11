@@ -7,8 +7,7 @@ body {
 .CSSbayan {
   max-width: 570px;
   margin: auto;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 100%;
 }
 .CSSbayan_bayan {
   position: relative;
@@ -65,15 +64,20 @@ body {
   content: "-";
 }
 .CSSbayan_bayan input[type="checkbox"]:checked + label::after {
-  transform: rotate(400deg);
+  transform: rotate(500deg);
 }
 .CSSbayan_bayan input[type="radio"]:checked + label::after {
   transform: rotateX(200deg);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .CSSbayan {
     max-width: 100%;
-    border-radius: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
   }
   .CSSbayan_bayan label {
     font-size: 16px;

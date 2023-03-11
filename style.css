@@ -71,30 +71,25 @@ body {
 .CSSbayan_bayan input[type="radio"]:checked + label::after {
   transform: rotateX(200deg);
 }
-@media screen and (max-width: 570px) {
-  .CSSbayan {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* стили для планшетной версии */
+@media (max-width: 768px) {
+  .container {
+    height: 400px;
   }
-  .CSSbayan_bayan label {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .CSSbayan_bayan label::after {
-    font-size: 20px;
-  }
-  .CSSbayan_bayan input[type="checkbox"] + label::after {
-    content: "+";
-  }
-  .CSSbayan_bayan input[type="checkbox"]:checked + label::after {
-    content: "-";
-  }
-  .CSSbayan_bayan-content {
-    background: #92a7bf;
+}
+/* стили для мобильной версии */
+@media (max-width: 480px) {
+  .container {
+    height: 300px;
   }
 }

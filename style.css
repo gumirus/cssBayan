@@ -56,9 +56,6 @@ body {
 }
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
 }
 /* адаптация по высоте */
 .CSSbayan_bayan-content img {
